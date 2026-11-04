@@ -110,17 +110,17 @@ const projects = [
     status: "In Development",
     website: "https://abrupa.shop",
   },
-  {
-    number: "03",
-    name: "Silan Software",
-    category: "Corporate Website",
-    description:
-      "A professional business website presenting software development services, educational programs and digital solutions.",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
-    type: "Business Website",
-    status: "Developed",
-    website: "https://silansoftware.com",
-  },
+  // {
+  //   number: "03",
+  //   name: "Silan Software",
+  //   category: "Corporate Website",
+  //   description:
+  //     "A professional business website presenting software development services, educational programs and digital solutions.",
+  //   technologies: ["React", "TypeScript", "Tailwind CSS"],
+  //   type: "Business Website",
+  //   status: "Developed",
+  //   website: "https://silansoftware.com",
+  // },
 ];
 
 const Projects = () => {
