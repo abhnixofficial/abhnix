@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { BrowserRouter, useLocation } from "react-router-dom";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import AppRoutes from "./routes/AppRoutes";
@@ -109,6 +111,7 @@ function App() {
       </main>
 
       <Footer />
+      <Analytics />
     </BrowserRouter>
   );
 }
