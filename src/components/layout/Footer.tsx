@@ -5,8 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowUpRightFromSquare,
   faArrowUp,
-  faArrowRight,
-  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -28,7 +26,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#111111] text-white">
-      <div className="mx-auto max-w-[1440px] px-6 md:px-12 lg:px-20">
+      <div className="mx-auto max-w-360 px-6 md:px-12 lg:px-20">
 
         {/* TOP CTA */}
         <div className="border-b border-white/15 py-20 md:py-28">
@@ -39,7 +37,7 @@ const Footer = () => {
                 Have a project in mind?
               </span>
 
-              <h2 className="mt-7 max-w-[850px] text-[clamp(42px,7vw,85px)] font-semibold leading-[1.02] tracking-[-0.07em]">
+              <h2 className="mt-7 max-w-212.5 text-[clamp(42px,7vw,85px)] font-semibold leading-[1.02] tracking-[-0.07em]">
                 Let's create
                 <span className="block text-white/40">
                   something great.
@@ -76,7 +74,7 @@ const Footer = () => {
               ABHNIX<span className="text-white/40">.</span>
             </Link>
 
-            <p className="mt-7 max-w-[350px] text-sm leading-8 text-white/50">
+            <p className="mt-7 max-w-87.5 text-sm leading-8 text-white/50">
               We build modern digital experiences and software solutions
               that help businesses move forward.
             </p>
