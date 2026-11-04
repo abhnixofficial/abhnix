@@ -4,7 +4,7 @@ import {
 ArrowDown,
 ArrowUpRight,
 ExternalLink,
-Code2,
+
 ShoppingBag,
 ShoppingCart,
 } from "lucide-react";
@@ -127,7 +127,7 @@ return (
       </div>
 
       <div className="space-y-24 md:space-y-32">
-        {projects.map((project, index) => {
+        {projects.map((project) => {
           const Icon = project.icon;
 
           return (
