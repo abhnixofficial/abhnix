@@ -98,15 +98,36 @@ const SEOManager = () => {
   return null;
 };
 
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
+
+const GoogleAnalytics = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.gtag("event", "page_view", {
+      page_title: document.title,
+      page_location: window.location.href,
+      page_path: location.pathname + location.search,
+    });
+  }, [location]);
+
+  return null;
+};
+
 function App() {
   return (
     <BrowserRouter>
       <SEOManager />
+      <GoogleAnalytics />
       <SmoothScroll />
 
       <Navbar />
 
-      <main className="pt-[76px] md:pt-[86px]">
+      <main className="pt-19 md:pt-21.5">
         <AppRoutes />
       </main>
 
