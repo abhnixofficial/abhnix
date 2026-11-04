@@ -8,6 +8,29 @@ import Footer from "./components/layout/Footer";
 import AppRoutes from "./routes/AppRoutes";
 import SmoothScroll from "./components/common/SmoothScroll";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+const GoogleAnalytics = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (typeof window.gtag !== "function") return;
+
+    window.gtag("event", "page_view", {
+      page_title: document.title,
+      page_location: window.location.href,
+      page_path: location.pathname + location.search,
+      send_to: "G-Y9NTRJRTJH",
+    });
+  }, [location.pathname, location.search]);
+
+  return null;
+};
+
 const SEO_DATA: Record<
   string,
   { title: string; description: string }
@@ -102,6 +125,7 @@ function App() {
   return (
     <BrowserRouter>
       <SEOManager />
+      <GoogleAnalytics />
       <SmoothScroll />
 
       <Navbar />
