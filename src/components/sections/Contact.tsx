@@ -68,7 +68,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/abhnix.official@gmail.com",
+        "https://formsubmit.co/ajax/hello@abhnix.com",
         {
           method: "POST",
           headers: {
@@ -150,7 +150,7 @@ const Contact = () => {
                     Official Email
                   </p>
                   <p className="mt-2 text-sm font-medium text-neutral-800">
-                    abhnix.official@gmail.com
+                    hello@abhnix.com
                   </p>
                 </div>
               </div>
