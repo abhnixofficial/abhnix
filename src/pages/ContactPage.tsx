@@ -148,8 +148,7 @@ return (
                 Email
               </p>
               <p className="mt-2 text-sm font-medium">
-                {/* abhnix.official@gmail.com */}
-                hello@abhnix.com
+                abhnix.official@gmail.com
               </p>
             </div>
           </div>
@@ -371,7 +370,7 @@ return (
       </h2>
 
       <a
-        href="mailto:hello@abhnix.com"
+        href="mailto:abhnix.official@gmail.com"
         className="group mt-10 inline-flex items-center gap-5 text-sm font-bold"
       >
         <span className="border-b border-black pb-2">
